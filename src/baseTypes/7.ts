@@ -14,10 +14,8 @@ enum DayOfWeek {
 }
 
 function isWeekend(day: DayOfWeek):boolean {
-  if (day === 'Working') {
-  return false
-  } 
+  if (day === DayOfWeek.Sat && day === DayOfWeek.Sun) {
   return true
+  } 
+  return false
 }
-
-isWeekend(DayOfWeek.Mon)
